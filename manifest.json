@@ -1,0 +1,33 @@
+{
+	"manifest_version": 3,
+  "name": "Sundays",
+  "version": "1.0",
+  "description": "Doesn't allow anywork to be done on Sundays",
+  "content_scripts": [ 
+    {
+    "matches": ["https://stackoverflow.com/*"],
+    "js": ["content/main.js"],
+    "css": ["style.css"]
+    },
+    {
+    "matches": ["https://*.mozilla.org/en-US/*"],
+    "js": ["content/main.js"],
+    "css": ["style.css"]
+    },
+    {
+    "matches": ["https://www.w3schools.com/*"],
+    "js": ["content/main.js"],
+    "css": ["style.css"]
+    },
+    {
+    "matches": ["https://www.geeksforgeeks.org/*"],
+    "js": ["content/main.js"],
+    "css": ["style.css"]
+    },
+    {
+    "matches": ["https://github.com/*"],
+    "js": ["content/main.js"],
+    "css": ["style.css"]
+    }
+ ]
+}
